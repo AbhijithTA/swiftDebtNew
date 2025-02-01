@@ -4,14 +4,15 @@ import Img1 from "../../assets/Images/Services_About.jpg";
 const CoreServices = () => {
   return (
     <div className="bg-gradient-to-b from-blue-900 to-gray-800 text-white py-12 px-6 md:px-20">
-    
       <motion.div
         className="text-center"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="text-3xl md:text-5xl font-bold mb-6">Our Core Services</h1>
+        <h1 className="text-3xl md:text-5xl font-bold mb-6">
+          Our Core Services
+        </h1>
       </motion.div>
 
       {/* Three Procedures Section */}
@@ -31,19 +32,19 @@ const CoreServices = () => {
       >
         {[
           {
-            title: "Amicable Negotiation",
+            title: "Amicable Settlement",
             content:
-              "We always try to resolve cases amicably and without the involvement of third parties or legal procedures.",
+              "We prioritize peaceful resolutions by facilitating direct negotiations, aiming to settle debts without involving third parties or legal action.",
           },
           {
-            title: "Legal Negotiation",
+            title: "Legal Mediation",
             content:
-              "When an amicable solution cannot be found, we follow through with legal negotiation, acting on your side every step of the way.",
+              "When a mutual agreement isn't possible, we step in with structured legal mediation, ensuring your interests are represented every step of the way.",
           },
           {
-            title: "Litigation",
+            title: "Litigation Support",
             content:
-              "In cases where legal negotiation is unsuccessful, we support you towards recovering your money through litigation.",
+              "If mediation fails, we provide full legal support, guiding you through the litigation process to ensure a fair and timely debt recovery.",
           },
         ].map((service, index) => (
           <motion.div
@@ -51,7 +52,9 @@ const CoreServices = () => {
             className="bg-slate-700 text-white rounded-lg shadow-lg p-6 flex flex-col items-center "
             whileHover={{ scale: 1.05 }}
           >
-            <div className="text-6xl font-bold text-blue-600 mb-4">{index + 1}</div>
+            <div className="text-6xl font-bold text-blue-600 mb-4">
+              {index + 1}
+            </div>
             <h2 className="text-lg font-semibold mb-4 text-center ">
               {service.title}
             </h2>
@@ -74,20 +77,21 @@ const CoreServices = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
             <div>
               <p>
-                Intelligent lending opens doors and allows ambitious individuals
-                and fledgling businesses to grow. But without careful planning
-                and management, financial debt can become overwhelming. Debt
-                management allows borrowers to set realistic plans, anticipate
-                change, and keep promises. With the guidance of experts in the
-                field, you'll be able to make the most of your borrowing.
+                Effective lending empowers individuals and businesses to achieve
+                their goals. However, without proper oversight, debt can quickly
+                become unmanageable. Our debt management services provide
+                structured plans that help borrowers maintain control, adapt to
+                changes, and meet financial commitments. With expert guidance,
+                you can maximize the benefits of your borrowing while minimizing
+                risk.
               </p>
               <p className="mt-4">
-                If things go wrong, trying to manage spiraling debt can feel
-                like swimming against the tide. You need someone on your side,
-                taking away the stress of dealing directly with lenders and
-                applying a practical approach to your problems. Fort Equity's
-                solutions will get you back on track, leaving you to focus on
-                what you do best.
+                When debt becomes overwhelming, managing it alone can feel
+                impossible. This is where Swift Debt steps in. We relieve you
+                from the burden of dealing with lenders, offering practical,
+                results-driven solutions. Our proven approach puts you back in
+                control, so you can focus on growing your business or achieving
+                your personal financial goals
               </p>
             </div>
             <div className="flex justify-center">
@@ -105,4 +109,3 @@ const CoreServices = () => {
 };
 
 export default CoreServices;
-    

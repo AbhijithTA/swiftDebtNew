@@ -15,6 +15,7 @@ function App() {
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
+
   return (
     <Router>
       {loading ? (
@@ -25,8 +26,8 @@ function App() {
           <Routes>
             <Route path="/" element={<IndexHomePage />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/aboutUs" element={<OurCompany />} />
-            <Route path="/contactUs" element={<ContactUs />} />
+            <Route path="/about-us" element={<OurCompany />} />
+            <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
           <FooterComponent />
         </>

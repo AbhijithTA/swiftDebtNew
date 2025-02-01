@@ -1,22 +1,21 @@
 import { Link } from "react-router-dom";
 
-
 const FooterComponent = () => {
   return (
     <footer className="bg-gray-900 text-gray-400">
       {/* Footer Content */}
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {/* Services */}
         <div>
           <Link to="/services">
-          <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
-          <ul className="space-y-2">
-            <li>Recovery Solution</li>
-            <li>Financial Management</li>
-            <li>Financial Settlement</li>
-            <li>Outsourcing</li>
-            <li>Online Access</li>
-          </ul>
+            <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
+            <ul className="space-y-2">
+              <li>Recovery Solution</li>
+              <li>Financial Management</li>
+              <li>Financial Settlement</li>
+              <li>Outsourcing</li>
+              <li>Online Access</li>
+            </ul>
           </Link>
         </div>
 
@@ -32,30 +31,18 @@ const FooterComponent = () => {
           </ul>
         </div>
 
-        {/* Tools & Techniques */}
-        <div>
-          <h3 className="text-lg font-semibold text-white mb-4">
-            Tools & Techniques
-          </h3>
-          <ul className="space-y-2">
-            <li>Modernized Communication</li>
-            <li>Continuous Field Visits</li>
-            <li>Demand Letters and Legal Notices</li>
-            <li>Providing Settlement Plans</li>
-          </ul>
-        </div>
-
         {/* About */}
         <div>
-          <Link to="/aboutUs">
-          <h3 className="text-lg font-semibold text-white mb-4">About</h3>
-          <ul className="space-y-2">
-            <li>Legal & Security</li>
-            <li>Terms of Use</li>
-            <li>Help Centre</li>
-            <li>Privacy Policy</li>
-          </ul>
+          <Link to="/about-us">
+            <h3 className="text-lg font-semibold text-white mb-4">About</h3>
+            <ul className="space-y-2">
+              <li>Legal & Security</li>
+              <li>Terms of Use</li>
+              <li>Help Centre</li>
+              <li>Privacy Policy</li>
+            </ul>
           </Link>
+
           {/* Social Media */}
           <div className="mt-6">
             <h4 className="text-white font-semibold mb-4">Follow Us</h4>

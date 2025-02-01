@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState } from "react";
 import logo from "../../src/assets/Logo/Logo-01.png";
-import { link } from 'framer-motion/client';
-import { Link } from 'react-router-dom';
+import { link } from "framer-motion/client";
+import { Link } from "react-router-dom";
 
 const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,16 +14,18 @@ const NavbarComponent = () => {
     <nav className="bg-gray-800 px-6 py-4 shadow-md">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo and Title */}
-        <div className="flex items-center space-x-3">
-          <img
-            src={logo}
-            alt="Swift Debt Collection Logo"
-            className="w-10 h-10 md:w-12 md:h-12"
-          />
-          <span className="text-white text-lg font-semibold">
-            SWIFT DEBT COLLECTION
-          </span>
-        </div>
+        <Link to="/">
+          <div className="flex items-center space-x-3">
+            <img
+              src={logo}
+              alt="Swift Debt Collection Logo"
+              className="w-10 h-10 md:w-12 md:h-12"
+            />
+            <span className="text-white text-lg font-semibold">
+              SWIFT DEBT COLLECTION
+            </span>
+          </div>
+        </Link>
 
         {/* Desktop Contact Info */}
         <div className="hidden lg:flex items-center space-x-8">
@@ -34,14 +36,14 @@ const NavbarComponent = () => {
         {/* Desktop Navbar Links */}
         <div className="hidden md:flex space-x-6">
           {[
-           { name:"HOME",link:"/"},
-           { name:"SERVICES",link: "/services"},
-           { name:"ABOUT US",link:"/aboutUs"},
-          
-           { name :"CONTACT US",link:"/contactUs"},
+            { name: "HOME", link: "/" },
+            { name: "SERVICES", link: "/services" },
+            { name: "ABOUT US", link: "/about-us" },
+
+            { name: "CONTACT US", link: "/contact-us" },
           ].map((item) => (
             <Link
-             to={item.link}
+              to={item.link}
               key={item.name}
               className="text-white hover:text-cyan-400 text-base font-medium"
             >
@@ -84,24 +86,22 @@ const NavbarComponent = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden mt-4 space-y-2 bg-gray-800 p-4 rounded-lg shadow-md">
-          {[
-            "HOME",
-            "SERVICES",
-            "ABOUT US",
-            "CAREERS",
-            "CONTACT US",
-          ].map((item) => (
-            <Link
-              to={`#${item.toLowerCase().replace(' ', '-')}`}
-              key={item}
-              className="block text-white hover:text-cyan-400 text-base font-medium"
-            >
-              {item}
-            </Link>
-          ))}
+          {["HOME", "SERVICES", "ABOUT US", "CONTACT US"].map(
+            (item) => (
+              <Link
+                to={`/${item.toLowerCase().replace(" ", "-")}`} // Ensure that the URL uses dashes instead of camelCase
+                key={item}
+                className="block text-white hover:text-cyan-400 text-base font-medium"
+              >
+                {item}
+              </Link>
+            )
+          )}
           <div className="mt-4 space-y-2">
             <span className="block text-gray-400 text-sm">+971 55 1357953</span>
-            <span className="block text-gray-400 text-sm">info@swiftdebt.ae</span>
+            <span className="block text-gray-400 text-sm">
+              info@swiftdebt.ae
+            </span>
           </div>
         </div>
       )}

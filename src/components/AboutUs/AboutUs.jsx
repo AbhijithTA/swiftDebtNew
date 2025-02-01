@@ -9,26 +9,26 @@ const OurCompany = () => {
     {
       title: "Solid Relationships",
       description:
-        "Whether our clients come to us in a rare moment of crisis or return to us again and again, we take the time to establish strong and trusting relationships with every individual and business that approaches us.",
-      image: handShake, 
+        "Whether our clients approach us during times of crisis or return to us regularly, we prioritize building strong and trusting relationships with every individual and business we work with.",
+      image: handShake,
     },
     {
       title: "Honesty & Integrity",
       description:
-        "From the very first point of contact with Fort Equity, you can be sure of our complete transparency. No false promises, no cutting corners, no mixed messages.",
-      image: Honesty, 
+        "From the first point of contact with Swift Debt Collection, we ensure complete transparency. We promise no false promises, no shortcuts, and no mixed messages.",
+      image: Honesty,
     },
     {
       title: "Wisdom & Understanding",
       description:
-        "Our team’s combined experience across a wide range of business sectors gives Fort Equity not only expertise but also intuitive wisdom to handle each case with care, attention to detail, and success.",
-      image: wisdom, 
+        "Our team brings a wealth of experience across various business sectors. This expertise, combined with our intuitive wisdom, ensures we handle each case with care, attention to detail, and the best chance of success.",
+      image: wisdom,
     },
     {
       title: "Sincerity & Respect",
       description:
-        "All members of the Fort Equity team are personally invested in looking after our clients. We understand that when financial relationships break down, there’s always a human impact.",
-      image: sincerity, 
+        "Every member of the Swift Debt Collection team is personally invested in supporting our clients. We understand the human impact of financial challenges, and we work with empathy and respect in every case.",
+      image: sincerity,
     },
   ];
 
@@ -66,15 +66,10 @@ const OurCompany = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-xl md:text-2xl font-semibold text-blue-400 mb-4">
-            Welcome to Swift Debt
+            Welcome to Swift Debt Collection
           </h2>
           <p className="text-gray-300 text-sm md:text-base">
-            We are a Claims Recovery and Financial Management Services company
-            based in Dubai, UAE. Fort Equity handles a comprehensive range of
-            financial recoveries such as invoices, insurance payments, supplier
-            and rent payments, personal and business loans, and more. Our team
-            is built on traditional values, offering a client-focused service
-            with efficiency and expertise.
+            We are a Debt Recovery and Financial Management Services company based in Dubai, UAE. Swift Debt Collection handles a wide range of financial recoveries, including invoices, insurance payments, supplier and rent payments, personal and business loans, and more. Our team is built on traditional values, offering client-focused service with efficiency and expertise.
           </p>
         </motion.div>
       </motion.div>

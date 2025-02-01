@@ -63,19 +63,7 @@ const HeroSectionComponent = () => {
           </div>
         </div>
 
-        {/* Additional Information */}
-        {/* <div className="text-center px-6 mt-5">
-          <h3 className="text-lg md:text-xl font-semibold text-white">
-            Equally critical is that we:
-          </h3>
-          <ul className="text-gray-300 text-sm md:text-base mt-2 space-y-2">
-            <li>
-              ✔️ Act with responsibility and professionalism to protect your
-              reputation.
-            </li>
-            <li>✔️ Educate your customers to respect your credit terms.</li>
-          </ul>
-        </div> */}
+       
       </div>
     </div>
   );

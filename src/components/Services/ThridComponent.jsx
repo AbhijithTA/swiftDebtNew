@@ -1,48 +1,54 @@
-
 import { motion } from "framer-motion";
 
 const MoreServices = () => {
   const services = [
     {
       title: "Skip Tracing",
+      subtitle: "Locate & Track with Precision",
       description:
-        "The process of locating a person's whereabouts for any number of purposes.",
-      icon: "👤", // Replace this with an SVG or icon if needed
+        "We specialize in tracking and locating individuals for various purposes, ensuring timely recovery and accountability.",
+      icon: "👤",
     },
     {
-      title: "Criminal Record Checks",
+      title: "Criminal Record Verification",
+      subtitle: "Know the Background, Stay Informed",
       description:
-        "Report will indicate the number of active and closed criminal records against the client.",
+        "Access detailed reports on active and closed criminal records related to the debtor, offering complete transparency and informed decision-making.",
       icon: "⚖️",
     },
     {
-      title: "Credit Rating Report",
+      title: "Credit Assessment Report",
+      subtitle: "Understand Creditworthiness, Minimize Risk",
       description:
-        "A report that indicates information on the business including assets and credit ability.",
+        "Get a comprehensive report on a company's financial position, assets, and credit standing to make smarter, data-driven decisions.",
       icon: "💳",
     },
     {
-      title: "Legal Notice by Court",
+      title: "Court-Issued Legal Notices",
+      subtitle: "Formal Notifications with Legal Backing",
       description:
-        "Legal notice sent directly from court to notify the debtor of the overdue amount.",
+        "Notify debtors of overdue payments through official court-issued legal notices, adding weight and urgency to your claims.",
       icon: "📜",
     },
     {
-      title: "Initiating Police Case",
+      title: "Police Case Initiation",
+      subtitle: "Swift Action for Serious Cases",
       description:
-        "Include obtaining a bank report and submitting required documents to activate a police case.",
+        "We facilitate the preparation of bank reports and required documentation to activate police cases and expedite recovery.",
       icon: "🚔",
     },
     {
-      title: "Field Visit Report",
+      title: "Field Investigation Reports*",
+      subtitle: "On-Site Assessments for Deeper Insights",
       description:
-        "A field visit where an agent meets with the debtor to gather details on business size, assets, and liabilities.",
+        "Our agents conduct in-person visits to assess the debtor's business operations, assets, and financial standing for a complete situational overview.",
       icon: "📋",
     },
     {
-      title: "Legal Translation",
+      title: "Certified Legal Translations",
+      subtitle: "Accurate, Certified Translations for Legal Use",
       description:
-        "Legal translation of texts accompanied by certified accuracy for court documents.",
+        "Our legal translation services ensure 100% accuracy for official court documents, meeting regulatory requirements and eliminating language barriers.",
       icon: "🌐",
     },
   ];
@@ -56,7 +62,9 @@ const MoreServices = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">More About Our Services</h1>
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          More About Our Services
+        </h1>
         <p className="text-gray-300 text-lg">
           Explore additional ways we can help you with professional expertise.
         </p>
@@ -86,8 +94,13 @@ const MoreServices = () => {
           >
             <div className="text-blue-500 text-4xl mr-4">{service.icon}</div>
             <div>
-              <h2 className="text-xl font-semibold mb-2 text-white">{service.title}</h2>
-              <p className="text-gray-600 text-sm text-white">{service.description}</p>
+              <h2 className="text-xl font-semibold mb-1 text-white">
+                {service.title}
+              </h2>
+              <p className="text-sm text-gray-400 mb-2">{service.subtitle}</p>
+              <p className="text-gray-600 text-sm text-white">
+                {service.description}
+              </p>
             </div>
           </motion.div>
         ))}

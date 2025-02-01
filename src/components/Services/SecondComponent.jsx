@@ -6,28 +6,31 @@ import img3 from "../../assets/Images/Financial_Services_3.jpg";
 const FinancialServices = () => {
   const services = [
     {
-      title: "Recovery Solutions",
+      title: "Debt Recovery Services",
+      subtitle: "Rebuilding Finances, Restoring Trust",
       description:
-        "Fort Equity values the importance of long-established relationships, and our team handles cases with sensitivity, discretion, and respect, with a view to recovering not only monies but also relationships. We offer support every step of the way, including making necessary calls, notices, and visits, and carrying out immigration and police checks.",
+        "Swift Debt understands the value of strong relationships. Our recovery process is driven by empathy, confidentiality, and professionalism. We go beyond reclaiming funds - we strive to restore relationships. Our experts manage every aspect, from issuing reminders and formal notices to conducting immigration and legal checks, ensuring a seamless and stress-free experience for our clients.",
       image: img1,
     },
     {
-      title: "Financial Management",
+      title: "Financial Management Services",
+      subtitle: "Take Control of Your Financial Future",
       description:
-        "At Fort Equity, we pull together our wisdom and expertise to make debt work for you. Take charge of your debt with guidance from our experts. Education, planning, and budgeting will help you to not only manage current debt but also plan for the future.",
+        "Gain clarity and control over your finances with personalized debt management strategies. Our team of financial specialists provides actionable advice on budgeting, planning, and debt prioritization. We empower you to stay ahead of debt obligations while building a strong foundation for long-term financial stability.",
       image: img2,
     },
     {
-      title: "Financial Settlement",
+      title: "Debt Settlement Solutions",
+      subtitle: "Settle Smart, Move Forward",
       description:
-        "Debt settlement is negotiating with creditors to settle a debt for less than what is owed. This method is most often used to settle substantial debt with a single creditor, but can be used to deal with multiple creditors. We ensure a pragmatic and customized solution to suit your needs.",
+        "Debt settlement is a strategic approach to reduce outstanding debts. Our experts negotiate directly with creditors on your behalf to secure favorable settlements, often for less than the original balance. Whether you're dealing with a single lender or multiple creditors, our tailored approach ensures a personalized plan that works in your favor.",
       image: img3,
     },
   ];
 
   return (
     <div className="bg-gradient-to-b from-indigo-900 to-gray-900 text-white py-12 px-6 md:px-20">
-      {/* Header */}
+      {/* Main Heading */}
       <motion.div
         className="text-center"
         initial={{ opacity: 0, y: -50 }}
@@ -35,10 +38,10 @@ const FinancialServices = () => {
         transition={{ duration: 0.6 }}
       >
         <h1 className="text-3xl md:text-5xl font-bold mb-6">
-          Our Financial Services
+          Our Financial Solutions
         </h1>
         <p className="text-gray-300 text-lg">
-          Expert solutions for recovery, management, and settlement.
+          Comprehensive support for debt recovery, financial management, and settlement strategies.
         </p>
       </motion.div>
 
@@ -69,9 +72,12 @@ const FinancialServices = () => {
               alt={service.title}
               className="rounded-lg mb-4 w-full object-cover h-44"
             />
-            <h2 className="text-xl font-semibold mb-4 text-center text-white">
+            <h2 className="text-xl font-semibold mb-2 text-center text-white">
               {service.title}
             </h2>
+            <h3 className="text-lg font-medium mb-4 text-center text-gray-300">
+              {service.subtitle}
+            </h3>
             <p className="text-sm text-center text-white">
               {service.description}
             </p>

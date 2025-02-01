@@ -6,7 +6,7 @@ const IndexHomePage = () => {
   return (
     <>
       <HeroSectionComponent />
-      <div className="pt-20">
+      <div className="pt-40">
       <WhatWeStandFor />
       </div>
       <WhyChooseUsComponent />
