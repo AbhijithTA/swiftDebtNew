@@ -20,9 +20,9 @@ const ContactUs = () => {
     e.preventDefault();
 
     // Replace these with your EmailJS credentials
-    const SERVICE_ID = "YOUR_SERVICE_ID"; // Replace with your EmailJS service ID
-    const TEMPLATE_ID = "YOUR_TEMPLATE_ID"; // Replace with your EmailJS template ID
-    const USER_ID = "YOUR_USER_ID"; // Replace with your EmailJS user ID
+    const SERVICE_ID = "service_jrocaug"; 
+    const TEMPLATE_ID = "template_qztx1j9"; 
+    const USER_ID = "RZMrYDvxXjxy3tSuq"; 
 
     // Send the email
     emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, USER_ID)
@@ -169,9 +169,9 @@ const ContactUs = () => {
               The Meydan Hotel Grandstand <br />
               Meydan Road, Nad Al Sheba <br />
               Dubai, United Arab Emirates <br />
-              Mobile No.: 0503117597 <br />
-              Landline: 00971-45163600 Ext : 8771 <br />
-              Email: support@swiftdebtcollection.com
+              Mobile No.: +97150 3117597 <br />
+              Landline: +97145163600 ext. 8771<br />
+              Email: info@swiftdebtcollection.com
             </p>
           </div>
           <div className="w-full h-full">

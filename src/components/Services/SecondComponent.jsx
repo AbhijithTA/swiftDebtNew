@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import img1 from "../../assets/Images/Financial_Services_1.jpg";
-import img2 from "../../assets/Images/Financial_Services_2.jpg";
 import img3 from "../../assets/Images/Financial_Services_3.jpg";
 
 const FinancialServices = () => {
@@ -13,13 +12,6 @@ const FinancialServices = () => {
       image: img1,
     },
     {
-      title: "Financial Management Services",
-      subtitle: "Take Control of Your Financial Future",
-      description:
-        "Gain clarity and control over your finances with personalized debt management strategies. Our team of financial specialists provides actionable advice on budgeting, planning, and debt prioritization. We empower you to stay ahead of debt obligations while building a strong foundation for long-term financial stability.",
-      image: img2,
-    },
-    {
       title: "Debt Settlement Solutions",
       subtitle: "Settle Smart, Move Forward",
       description:
@@ -29,7 +21,7 @@ const FinancialServices = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-indigo-900 to-gray-900 text-white py-12 px-6 md:px-20">
+    <div className="bg-gradient-to-b from-indigo-900 to-gray-900 text-white py-12 px-6 md:px-12 lg:px-20">
       {/* Main Heading */}
       <motion.div
         className="text-center"
@@ -37,9 +29,7 @@ const FinancialServices = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="text-3xl md:text-5xl font-bold mb-6">
-          Our Financial Solutions
-        </h1>
+        <h1 className="text-3xl md:text-5xl font-bold mb-6">Our Financial Solutions</h1>
         <p className="text-gray-300 text-lg">
           Comprehensive support for debt recovery, financial management, and settlement strategies.
         </p>
@@ -47,7 +37,7 @@ const FinancialServices = () => {
 
       {/* Services Section */}
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"
+        className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 max-w-5xl mx-auto"
         initial="hidden"
         animate="visible"
         variants={{
@@ -72,15 +62,9 @@ const FinancialServices = () => {
               alt={service.title}
               className="rounded-lg mb-4 w-full object-cover h-44"
             />
-            <h2 className="text-xl font-semibold mb-2 text-center text-white">
-              {service.title}
-            </h2>
-            <h3 className="text-lg font-medium mb-4 text-center text-gray-300">
-              {service.subtitle}
-            </h3>
-            <p className="text-sm text-center text-white">
-              {service.description}
-            </p>
+            <h2 className="text-xl font-semibold mb-2 text-center text-white">{service.title}</h2>
+            <h3 className="text-lg font-medium mb-4 text-center text-gray-300">{service.subtitle}</h3>
+            <p className="text-sm text-center text-white">{service.description}</p>
           </motion.div>
         ))}
       </motion.div>

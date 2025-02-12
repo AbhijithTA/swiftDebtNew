@@ -29,8 +29,8 @@ const NavbarComponent = () => {
 
         {/* Desktop Contact Info */}
         <div className="hidden lg:flex items-center space-x-8">
-          <span className="text-gray-400 text-sm">+971 55 1357953</span>
-          <span className="text-gray-400 text-sm">info@swiftdebt.ae</span>
+          <span className="text-gray-400 text-sm">+97150 3117597</span>
+          <span className="text-gray-400 text-sm">info@swiftdebtcollection.com</span>
         </div>
 
         {/* Desktop Navbar Links */}
@@ -38,7 +38,7 @@ const NavbarComponent = () => {
           {[
             { name: "HOME", link: "/" },
             { name: "SERVICES", link: "/services" },
-            { name: "ABOUT US", link: "/about-us" },
+            { name: "CAREER", link: "/career" },
 
             { name: "CONTACT US", link: "/contact-us" },
           ].map((item) => (
@@ -86,7 +86,7 @@ const NavbarComponent = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden mt-4 space-y-2 bg-gray-800 p-4 rounded-lg shadow-md">
-          {["HOME", "SERVICES", "ABOUT US", "CONTACT US"].map(
+          {["HOME", "SERVICES", "CAREER", "CONTACT US"].map(
             (item) => (
               <Link
                 to={`/${item.toLowerCase().replace(" ", "-")}`} // Ensure that the URL uses dashes instead of camelCase

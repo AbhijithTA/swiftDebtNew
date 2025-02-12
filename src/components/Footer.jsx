@@ -4,24 +4,28 @@ const FooterComponent = () => {
   return (
     <footer className="bg-gray-900 text-gray-400">
       {/* Footer Content */}
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Services */}
         <div>
           <Link to="/services">
             <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
             <ul className="space-y-2">
-              <li>Recovery Solution</li>
-              <li>Financial Management</li>
-              <li>Financial Settlement</li>
-              <li>Outsourcing</li>
-              <li>Online Access</li>
+              <li>Skip Tracing</li>
+              <li>Criminal Record Verification</li>
+              <li>Credit Assessment Report</li>
+              <li>Court-Issued Legal Notices</li>
+              <li>Police Case Initiation</li>
+              <li>Field Investigation Reports</li>
+              <li>Certified Legal Translations</li>
             </ul>
           </Link>
         </div>
 
         {/* Legal Services */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Legal Services</h3>
+          <h3 className="text-lg font-semibold text-white mb-4">
+            Legal Services
+          </h3>
           <ul className="space-y-2">
             <li>Civil Lawsuit</li>
             <li>Arbitration</li>
@@ -31,36 +35,22 @@ const FooterComponent = () => {
           </ul>
         </div>
 
-        {/* About */}
+        {/* Coverage Areas */}
         <div>
-          <Link to="/about-us">
-            <h3 className="text-lg font-semibold text-white mb-4">About</h3>
+          <h3 className="text-lg font-semibold text-white mb-4">
+            We Are Covering
+          </h3>
+          <Link to="/">
             <ul className="space-y-2">
-              <li>Legal & Security</li>
-              <li>Terms of Use</li>
-              <li>Help Centre</li>
-              <li>Privacy Policy</li>
+              <li>Normal Debt Collection</li>
+              <li>Default Debt Collection</li>
+              <li>Financial Settlements between Creditor and Debtors</li>
+              <li>Disputed Debt Collection</li>
+              <li>Bounced Cheque Debt Collection</li>
+              <li>Filing Criminal Cases</li>
+              <li>Filing Civil Cases</li>
             </ul>
           </Link>
-
-          {/* Social Media */}
-          <div className="mt-6">
-            <h4 className="text-white font-semibold mb-4">Follow Us</h4>
-            <div className="flex space-x-4 text-white">
-              <Link to="#" className="hover:text-cyan-500">
-                <i className="fab fa-facebook-f"></i>
-              </Link>
-              <Link to="#" className="hover:text-cyan-500">
-                <i className="fab fa-twitter"></i>
-              </Link>
-              <Link to="#" className="hover:text-cyan-500">
-                <i className="fab fa-linkedin-in"></i>
-              </Link>
-              <Link to="#" className="hover:text-cyan-500">
-                <i className="fab fa-instagram"></i>
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
 

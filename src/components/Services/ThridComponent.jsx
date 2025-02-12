@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 
 const MoreServices = () => {
   const services = [
-    {
-      title: "Skip Tracing",
-      subtitle: "Locate & Track with Precision",
-      description:
-        "We specialize in tracking and locating individuals for various purposes, ensuring timely recovery and accountability.",
-      icon: "👤",
-    },
+    // {
+    //   title: "Skip Tracing",
+    //   subtitle: "Locate & Track with Precision",
+    //   description:
+    //     "We specialize in tracking and locating individuals for various purposes, ensuring timely recovery and accountability.",
+    //   icon: "👤",
+    // },
     {
       title: "Criminal Record Verification",
       subtitle: "Know the Background, Stay Informed",

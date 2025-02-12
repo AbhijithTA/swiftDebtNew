@@ -7,6 +7,7 @@ import NavbarComponent from "./components/Navbar";
 import Services from "./components/Services/Index";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader";
+import CareerPage from "./components/CareerPage/CareerComponent";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,7 +27,7 @@ function App() {
           <Routes>
             <Route path="/" element={<IndexHomePage />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/about-us" element={<OurCompany />} />
+            <Route path="/career" element={<CareerPage />} />
             <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
           <FooterComponent />

@@ -58,7 +58,7 @@ const HeroSectionComponent = () => {
             <p className="text-gray-200 text-sm md:text-base lg:text-lg mt-1 md:mt-0 leading-relaxed w-full md:w-2/3 lg:w-1/2 font-medium">
               We are a Claims Recovery and Financial Management Services company
               based in Dubai, UAE. Our support team is ready to assist you in
-              UAE,KSA,Bahrain and Oman.
+              UAE, KSA, Bahrain and Oman.
             </p>
           </div>
         </div>
