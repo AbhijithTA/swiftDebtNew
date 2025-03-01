@@ -29,7 +29,7 @@ const NavbarComponent = () => {
 
         {/* Desktop Contact Info */}
         <div className="hidden lg:flex items-center space-x-8">
-          <span className="text-gray-400 text-sm">+97150 3117597</span>
+          <span className="text-gray-400 text-sm">+971 50 3117597</span>
           <span className="text-gray-400 text-sm">info@swiftdebtcollection.com</span>
         </div>
 
@@ -98,7 +98,7 @@ const NavbarComponent = () => {
             )
           )}
           <div className="mt-4 space-y-2">
-            <span className="block text-gray-400 text-sm">+971 55 1357953</span>
+            <span className="block text-gray-400 text-sm">+971 50 3117597</span>
             <span className="block text-gray-400 text-sm">
               info@swiftdebt.ae
             </span>

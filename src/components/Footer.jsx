@@ -10,7 +10,7 @@ const FooterComponent = () => {
           <Link to="/services">
             <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
             <ul className="space-y-2">
-              <li>Skip Tracing</li>
+             
               <li>Criminal Record Verification</li>
               <li>Credit Assessment Report</li>
               <li>Court-Issued Legal Notices</li>
